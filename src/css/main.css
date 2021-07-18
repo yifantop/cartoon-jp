@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*眼睛部分*/
+.eyes-area {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+}
+.eyes-area .eye {
+  width: 80px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  background: white;
+}
+.eyes-area .eye .eye-lash-1 {
+  width: 5px;
+  height: 15px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  transform: rotate(-30deg);
+  left: 15px;
+  top: -11px;
+}
+.eyes-area .eye .eye-lash-2 {
+  width: 4px;
+  height: 15px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%, 0);
+}
+.eyes-area .eye .eye-lash-3 {
+  width: 5px;
+  height: 15px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  right: 15px;
+  top: -11px;
+  transform: rotate(30deg);
+}
+.eyes-area .eye .eye-ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background: #50d3f6;
+}
+.eyes-area .eye .eye-ball .eye-core {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.eyes-area .eye:first-child > .eye-ball {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translate(0, -50%);
+}
+.eyes-area .eye:nth-child(2) > .eye-ball {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  transform: translate(0, -50%);
+}
+
+.nose-area {
+  width: 31px;
+  height: 32px;
+  background: #fef773;
+  position: absolute;
+  left: 50%;
+  top: 101px;
+  transform: translate(-47%, 0);
+  border: 3px solid black;
+  border-radius: 50% 50% 50% 50%;
+  border-bottom: none;
+  z-index: 6;
+}
+.nose-area .over {
+  width: 15px;
+  height: 10px;
+  background: #fef773;
+  position: absolute;
+  right: 9px;
+  bottom: 0;
+}
+
+.mouse {
+  width: 150px;
+  height: 63px;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  transform: translate(-50%, 0);
+  z-index: 4;
+}
+.mouse .outer-circle {
+  width: 140px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: absolute;
+  left: 5px;
+  top: -130px;
+  background: #560102;
+  overflow: hidden;
+}
+.mouse .inner-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  left: -54px;
+  top: -239px;
+  background: #fef773;
+}
+
+.blusher1 {
+  width: 36px;
+  height: 25px;
+  border: 3px solid #ca6233;
+  border-radius: 50%;
+  border-bottom: none;
+  position: absolute;
+  left: 50%;
+  top: 108px;
+  transform: translate(52px, 0) rotate(30deg);
+  z-index: 7;
+  background: #fef773;
+}
+.blusher1 .red-point:first-child {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.blusher1 .red-point:nth-child(2) {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+.blusher1 .red-point:nth-child(3) {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.blusher2 {
+  width: 36px;
+  height: 25px;
+  border: 3px solid #ca6233;
+  position: absolute;
+  left: 50%;
+  top: 112px;
+  z-index: 7;
+  border-radius: 50%;
+  border-bottom: none;
+  transform: translate(-85px, 0) rotate(-30deg);
+  background: #fef773;
+}
+.blusher2 .red-point:first-child {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+}
+.blusher2 .red-point:nth-child(2) {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+.blusher2 .red-point:nth-child(3) {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.red-point {
+  width: 3px;
+  height: 3px;
+  background: #ca6233;
+  border-radius: 50%;
+}
+
+.tooth1 {
+  width: 20px;
+  height: 17px;
+  border: 3px solid black;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  bottom: -17px;
+  transform: translate(-80%, 0) rotate(4deg);
+}
+
+.tooth2 {
+  width: 18px;
+  height: 17px;
+  border: 3px solid black;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translate(30%, 0) rotate(-4deg);
+}
+
+.tongue {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-25px, 0);
+}
+.tongue .left-circle {
+  width: 30px;
+  height: 30px;
+  background: #fba9b4;
+  border-radius: 100px 100px 100px 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tongue .right-circle {
+  width: 30px;
+  height: 30px;
+  background: #fba9b4;
+  border-radius: 100px 100px 100px 100px;
+  position: absolute;
+  left: 22px;
+  top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.canvas {
+  width: 100%;
+  height: 400px;
+  background: #fef773;
+  position: relative;
+  overflow: hidden;
+}
+.canvas .face-red1 {
+  width: 15px;
+  height: 20px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-115px, -100px);
+}
+.canvas .face-red2 {
+  width: 15px;
+  height: 20px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-145px, -45px);
+}
+.canvas .face-red3 {
+  width: 23px;
+  height: 27px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-96px, -20px) rotate(15deg);
+}
+.canvas .face-red4 {
+  width: 15px;
+  height: 20px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(95px, -101px);
+}
+.canvas .face-red5 {
+  width: 30px;
+  height: 35px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(95px, -52px) rotate(15deg);
+}
+.canvas .face-red6 {
+  width: 18px;
+  height: 23px;
+  background: #c9ad00;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(46px, -15px) rotate(15deg);
+}
+
+/*# sourceMappingURL=main.css.map */
