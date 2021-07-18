@@ -1,0 +1,28 @@
+.tongue {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-25px, 0);
+
+  .left-circle {
+    width: 30px;
+    height: 30px;
+    background: rgb(251,169,180);
+    border-radius: 100px 100px 100px 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .right-circle {
+    width: 30px;
+    height: 30px;
+    background: rgb(251,169,180);
+    border-radius: 100px 100px 100px 100px;
+
+
+    position: absolute;
+    left: 22px;
+    top: 0;
+  }
+}

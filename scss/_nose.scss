@@ -1,0 +1,23 @@
+.nose-area {
+  width: 31px;
+  height: 32px;
+  background: rgb(254, 247, 115);
+  position: absolute;
+  left: 50%;
+  top: 101px;
+  transform: translate(-47%, 0);
+  border: 3px solid black;
+  border-radius: 50% 50% 50% 50%;
+  border-bottom: none;
+  z-index: 6;
+
+  .over {
+    width: 15px;
+    height: 10px;
+    background: rgb(254, 247, 115);
+    position: absolute;
+    right: 9px;
+    bottom: 0;
+  }
+
+}

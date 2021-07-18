@@ -1,0 +1,67 @@
+.blusher1 {
+  width: 36px;
+  height: 25px;
+  border: 3px solid rgb(202,98,51);
+  border-radius: 50%;
+  border-bottom: none;
+  position: absolute;
+  left: 50%;
+  top: 108px;
+  transform: translate(52px, 0) rotate(30deg);
+  z-index: 7;
+  background: rgb(254, 247, 115);
+
+  .red-point:first-child {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+  .red-point:nth-child(2) {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+  }
+  .red-point:nth-child(3) {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+}
+.blusher2 {
+  width: 36px;
+  height: 25px;
+  border: 3px solid rgb(202,98,51);
+  position: absolute;
+  left: 50%;
+  top: 112px;
+  z-index: 7;
+  border-radius: 50%;
+  border-bottom: none;
+  transform: translate(-85px, 0) rotate(-30deg);
+  background: rgb(254, 247, 115);
+
+  .red-point:first-child {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+  }
+  .red-point:nth-child(2) {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+  }
+  .red-point:nth-child(3) {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+
+
+
+}
+.red-point {
+  width: 3px;
+  height: 3px;
+  background: rgb(202,98,51);
+  border-radius: 50%;
+}

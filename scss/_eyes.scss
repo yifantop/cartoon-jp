@@ -1,0 +1,87 @@
+/*眼睛部分*/
+.eyes-area {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+
+  .eye {
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+
+    .eye-lash-1 {
+      width: 5px;
+      height: 15px;
+      background: black;
+      border-radius: 10px;
+      position: absolute;
+      transform: rotate(-30deg);
+      left: 15px;
+      top: -11px;
+    }
+
+    .eye-lash-2 {
+      width: 4px;
+      height: 15px;
+      background: black;
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      transform: translate(-50%, 0);
+    }
+
+    .eye-lash-3 {
+      width: 5px;
+      height: 15px;
+      background: black;
+      border-radius: 10px;
+      position: absolute;
+      right: 15px;
+      top: -11px;
+      transform: rotate(30deg);
+    }
+
+
+    .eye-ball {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 3px solid black;
+      background: rgb(80, 211, 246);
+
+
+      .eye-core {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .eye:first-child > .eye-ball {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translate(0, -50%);
+  }
+
+  .eye:nth-child(2) > .eye-ball {
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translate(0, -50%);
+  }
+}
