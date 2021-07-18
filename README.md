@@ -14,6 +14,7 @@ npm run transform
 ```
 ### 步骤3：运行index.html
 ```shell
-npm run start
+npm run start   
+也可以使用其它运行工具，比如WebStorm自带的工具
 ```
 
