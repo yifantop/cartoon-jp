@@ -2,6 +2,8 @@
 
 用sass实现的海绵宝宝
 
+![avatar](./effect-image.png)
+
 ### 步骤1：装sass和parcel
 ```shell
 npm install
